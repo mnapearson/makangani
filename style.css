@@ -1,0 +1,241 @@
+@import url("https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap");
+
+* {
+  font-family: "Shadows Into Light", cursive;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* border: 1px solid white; */
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  color: #696363;
+  font-family: sans-serif;
+}
+
+section {
+  margin: 0 auto;
+  max-width: 960px;
+  padding: 4rem 6rem;
+}
+
+h1 {
+  font-size: 4rem;
+  margin-bottom: 7rem;
+  letter-spacing: 0.15ch;
+  font-weight: 500;
+  justify-content: center;
+  align-content: center;
+  text-align: center;
+  z-index: 10;
+  padding-top: 12rem;
+}
+
+h2 {
+  margin-top: 2rem;
+  font-size: 1.6rem;
+}
+
+p {
+  margin-bottom: 1rem;
+  line-height: 1.2;
+  font-size: 16px;
+  position: relative;
+  text-align: left;
+  line-height: 200%;
+  letter-spacing: 5;
+}
+
+button {
+  cursor: pointer;
+  outline: none;
+  border: none;
+  background-color: transparent;
+  display: flex;
+  font-size: 1rem;
+  align-items: center;
+  color: inherit;
+}
+
+button :hover {
+  color: hotpink;
+}
+
+.nav-menu a {
+  text-decoration: none;
+  color: white;
+}
+
+header {
+  z-index: 100;
+}
+
+.header {
+  display: flex;
+  overflow: visible;
+  position: fixed;
+  z-index: 100;
+  justify-content: flex-end;
+
+  width: 100vw;
+  padding: 1.5rem;
+  height: 6rem;
+  background-color: black;
+  opacity: 75%;
+}
+
+#close-submenu p {
+  font-size: 4rem;
+  line-height: 1;
+  font-weight: 300;
+  transition-property: color;
+  transition-duration: 200ms;
+  color: #d91904;
+  margin: 0;
+}
+
+#close-submenu p:hover {
+  transition-property: color;
+  transition-duration: 200ms;
+  color: #520901;
+}
+
+#close-submenu {
+  position: fixed;
+  left: 3rem;
+  top: 1rem;
+  display: flex;
+  align-items: center;
+  height: 6rem;
+}
+
+.dropdown-menu {
+  display: flex;
+  position: fixed;
+  padding: 1rem 0 2rem 0;
+  justify-content: space-around;
+  width: 100%;
+  margin: 0 auto;
+  transition: all 2s;
+  background-color: black;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+#makangani {
+  font-family: "Shadows Into Light", cursive;
+  letter-spacing: 0.7rem;
+  margin: 0 auto;
+  position: fixed;
+  padding: 1rem 0rem 2.5rem 0rem;
+}
+.hide-dropdown .dropdown-menu {
+  opacity: 0;
+  visibility: hidden;
+}
+
+nav ul {
+  list-style: none;
+  margin-top: 2rem;
+}
+
+nav h2 {
+  text-align: center;
+}
+
+.nav-menu {
+  width: 33%;
+  align-items: center;
+  text-align: center;
+}
+
+#stream-links {
+  color: #696363;
+  text-decoration-line: none;
+}
+
+#stream :hover {
+  color: hotpink;
+}
+
+.banner {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  z-index: -1;
+}
+
+.banner img {
+  margin-top: 6rem;
+}
+
+.field {
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.releases {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.madewale img {
+  display: flex;
+  margin-top: 3.5rem;
+  margin-left: 6rem;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  text-align: center;
+}
+
+.babysteps img {
+  display: flex;
+  margin-top: 8rem;
+  margin-left: 5.5rem;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  text-align: center;
+}
+
+.releases p {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.view-content {
+  margin-top: 4rem;
+  margin-left: -6rem;
+  padding-right: 3rem;
+}
+
+footer {
+  background-color: black;
+  width: 100vw;
+}
+
+.madeby {
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  color: white;
+}
+
+.madeby p {
+  font-size: 14px;
+  letter-spacing: 0.75rem;
+}
+
+.logo {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
