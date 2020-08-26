@@ -82,6 +82,7 @@ a {
 header {
   display: flex;
   flex-wrap: wrap;
+  margin-bottom: 2rem;
   z-index: 100;
 }
 
@@ -203,6 +204,11 @@ nav h2 {
   margin-top: 6rem;
 }
 
+.banner img:hover {
+  background-image: image(kingofhearts.png)
+  opacity: 100%;
+}
+
 .field {
   display: flex;
   flex-wrap: nowrap;
@@ -237,6 +243,8 @@ nav h2 {
   justify-content: center;
   align-items: center;
   vertical-align: center;
+  margin-top: 6rem;
+  margin-bottom: 2rem;
 }
 
 .stream-links h2 {
@@ -258,7 +266,7 @@ nav h2 {
   align-items: center;
   max-width: 100%;
   height: auto;
-  padding-left: 2rem;
+ 
 }
 
 .spacer {
@@ -270,18 +278,66 @@ nav h2 {
   font-size: 80px;
 }
 
+.contact {
+ 
+}
+
+.contact h2 {
+  display: flex;
+  flex-wrap: nowrap;
+  font-size: 50px;
+  color: black;
+  letter-spacing: 0.5rem;
+  justify-content: center;
+  text-align: center;
+  vertical-align: center;
+  padding-top: 2rem;
+  margin-bottom: 4rem;
+}
+
+.social-media {
+  display: fixed;
+  justify-content: center;
+  align-items: center;
+  vertical-align: center;
+  margin-bottom: 10rem;
+}
+
+.social-media .spacer {
+  padding: .5rem;
+  display: flex;
+  justify-content: center;
+
+}
+
+.social-media-icons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  max-width: 100%;
+  height: auto;
+  
+}
+
+.social-media a:hover {
+  color:greenyellow;
+}
+
+
 footer {
   background-color: black;
-  width: 100vw;
+  width: 100%;
 }
 
 .madeby {
   margin-top: 1rem;
-  margin-bottom: 0.5rem;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   color: white;
+  margin-bottom: 0rem;
+  
 }
 
 .madeby p {
