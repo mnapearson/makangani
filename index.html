@@ -7,6 +7,7 @@
     <title>MAKANGANI | Official Site</title>
     <link rel="stylesheet" href="style.css" defer />
     <script defer src="index.js"></script>
+    <script src="https://code.iconify.design/1/1.0.6/iconify.min.js"></script>
   </head>
 
   <body>
@@ -15,13 +16,23 @@
         <div id="close-submenu">
           <button id="makangani"><p>MAKANGANI</p></button>
         </div>
-        <div class="navleft-link">
-          <button id="store">
-            <h3>STORE</h3>
-          </button>
-          <button id="stream">
-            <h3>STREAM</h3>
-          </button>
+        <div class="navleft-menu">
+          <img
+            src="images/kingofhearts.png"
+            alt="hearts"
+            height="95px"
+            width="100px"
+          />
+          <nav>
+            <ul>
+              <li>
+                <h2><a href="http://www.shopify.com">STORE</a></h2>
+              </li>
+              <li>
+                <h2><a href="#stream-links">STREAM</a></h2>
+              </li>
+            </ul>
+          </nav>
         </div>
         <div class="dropdown-menu">
           <div class="nav-menu">
@@ -106,13 +117,56 @@
       </div>
     </section>
     <section class="stream-links" id="stream-links">
-      <h2>STREAM</h2>
+      <h2>...STREAM...</h2>
       <div class="stream-icons">
-        <ul class="platforms">
-          <li>spotify</li>
-          <li>soundcloud</li>
-          <li>youtube</li>
-        </ul>
+        <span
+          class="iconify"
+          data-inline="false"
+          data-icon="bx:bxl-spotify"
+          style="color: #1ed761"
+        ></span>
+        <div class="spacer"></div>
+        <span
+          class="iconify"
+          data-inline="false"
+          data-icon="cib:bandcamp"
+          style="color: #629aa9"
+        ></span>
+        <div class="spacer"></div>
+        <span
+          class="iconify"
+          data-inline="false"
+          data-icon="logos:soundcloud"
+        ></span>
+
+        <div class="spacer"></div>
+        <span
+          class="iconify"
+          data-inline="false"
+          data-icon="ant-design:apple-filled"
+          style="color: grey"
+        ></span>
+        <div class="spacer"></div>
+        <span
+          class="iconify"
+          data-inline="false"
+          data-icon="simple-icons:itunes"
+          style="color: #b150e2"
+        ></span>
+        <div class="spacer"></div>
+        <span
+          class="iconify"
+          data-inline="false"
+          data-icon="logos:google-play-icon"
+        ></span>
+        <div class="spacer"></div>
+        <span
+          class="iconify"
+          data-inline="false"
+          data-icon="simple-icons:tidal"
+          style="color: black"
+        ></span>
+        <div class="spacer"></div>
       </div>
     </section>
     <section class="contact-info" id="contact">

@@ -1,7 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap");
 
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@600&display=swap");
+
 * {
-  font-family: "Shadows Into Light", cursive;
+  font-family: "Raleway", sans-serif;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -10,14 +12,14 @@
 
 body {
   display: flex;
+  justify-content: center;
   flex-direction: column;
   color: #696363;
-  font-family: sans-serif;
 }
 
 section {
   margin: 0 auto;
-  max-width: 960px;
+  max-width: 100%;
   padding: 4rem 6rem;
 }
 
@@ -63,12 +65,23 @@ button :hover {
   color: hotpink;
 }
 
+a:hover {
+  color: hotpink;
+}
+
+a {
+  color: #696363;
+  text-decoration-line: none;
+}
+
 .nav-menu a {
   text-decoration: none;
   color: white;
 }
 
 header {
+  display: flex;
+  flex-wrap: wrap;
   z-index: 100;
 }
 
@@ -99,7 +112,7 @@ header {
 #close-submenu p:hover {
   transition-property: color;
   transition-duration: 200ms;
-  color: #520901;
+  color: hotpink;
 }
 
 #close-submenu {
@@ -118,7 +131,7 @@ header {
   justify-content: space-around;
   width: 100%;
   margin: 0 auto;
-  transition: all 2s;
+  transition: all 1s;
   background-color: black;
   top: 0;
   left: 0;
@@ -129,10 +142,11 @@ header {
 #makangani {
   font-family: "Shadows Into Light", cursive;
   letter-spacing: 0.7rem;
-  margin: 0 auto;
+  margin-top: -1rem;
+  margin-left: -2rem;
   position: fixed;
-  padding: 1rem 0rem 2.5rem 0rem;
 }
+
 .hide-dropdown .dropdown-menu {
   opacity: 0;
   visibility: hidden;
@@ -153,21 +167,36 @@ nav h2 {
   text-align: center;
 }
 
-#stream-links {
-  color: #696363;
+.navleft-menu {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: -1rem;
+  margin-right: 1rem;
+  margin-bottom: 1rem;
+  align-items: center;
+  line-height: 0.2rem;
+}
+
+.navleft-menu h2 {
+  font-size: 20px;
+  text-align: center;
+  letter-spacing: 0.2rem;
   text-decoration-line: none;
 }
 
-#stream :hover {
-  color: hotpink;
+.navleft-menu img {
+  display: flex;
+  justify-content: left;
+  margin-top: 2rem;
+  margin-right: 3.5rem;
 }
 
 .banner {
   display: flex;
-  flex-wrap: wrap;
   justify-content: center;
-  align-items: center;
   z-index: -1;
+  max-width: 100%;
+  height: auto;
 }
 
 .banner img {
@@ -179,40 +208,66 @@ nav h2 {
   flex-wrap: nowrap;
 }
 
-.releases {
-  display: flex;
-  flex-wrap: wrap;
-}
-
 .madewale img {
   display: flex;
-  margin-top: 3.5rem;
-  margin-left: 6rem;
   justify-content: center;
-  align-items: center;
-  align-content: center;
   text-align: center;
+  vertical-align: middle;
+  margin-top: 3.5rem;
 }
 
 .babysteps img {
   display: flex;
   margin-top: 8rem;
-  margin-left: 5.5rem;
   justify-content: center;
   align-items: center;
   align-content: center;
   text-align: center;
 }
 
-.releases p {
+.view-content {
   display: flex;
-  justify-content: flex-end;
+  align-content: center;
+  margin-top: 4rem;
+  vertical-align: center;
 }
 
-.view-content {
-  margin-top: 4rem;
-  margin-left: -6rem;
-  padding-right: 3rem;
+.stream-links {
+  display: fixed;
+  justify-content: center;
+  align-items: center;
+  vertical-align: center;
+}
+
+.stream-links h2 {
+  display: flex;
+  font-size: 50px;
+  color: black;
+  letter-spacing: 0.5rem;
+  justify-content: center;
+  text-align: center;
+  vertical-align: center;
+  padding-top: 2rem;
+  margin-bottom: 3rem;
+}
+
+.stream-icons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  max-width: 100%;
+  height: auto;
+  padding-left: 2rem;
+}
+
+.spacer {
+  padding: 2rem;
+  padding-top: 5rem;
+}
+
+.iconify {
+  font-size: 80px;
 }
 
 footer {
@@ -232,6 +287,8 @@ footer {
 .madeby p {
   font-size: 14px;
   letter-spacing: 0.75rem;
+  font-family: "Shadows Into Light", cursive;
+  text-align: center;
 }
 
 .logo {
