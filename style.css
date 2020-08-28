@@ -228,13 +228,16 @@ nav h2 {
   display: flex;
   align-content: center;
   margin-top: 4rem;
-  margin-bottom: 4rem;
+
   vertical-align: center;
+}
+
+#padding {
+  padding-top: 10rem;
 }
 
 .tour-info {
   display: fixed;
-  margin-top: 8rem;
   width: 70%;
   height: auto;
   border: 5px solid black;
@@ -257,7 +260,6 @@ nav h2 {
   justify-content: center;
   align-items: center;
   vertical-align: center;
-  margin-top: 6rem;
 }
 
 .stream-links h2 {
@@ -290,9 +292,6 @@ nav h2 {
   font-size: 80px;
 }
 
-.contact {
-}
-
 .contact h2 {
   display: flex;
   flex-wrap: nowrap;
@@ -303,7 +302,7 @@ nav h2 {
   text-align: center;
   vertical-align: center;
   padding-top: 2rem;
-  margin-bottom: 4rem;
+  padding-bottom: 5rem;
 }
 
 .social-media {
@@ -311,7 +310,7 @@ nav h2 {
   justify-content: center;
   align-items: center;
   vertical-align: center;
-  margin-bottom: 10rem;
+  margin-bottom: 7rem;
 }
 
 .social-media .spacer {
