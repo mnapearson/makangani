@@ -81,7 +81,6 @@ a {
 header {
   display: flex;
   flex-wrap: wrap;
-
   z-index: 100;
 }
 
@@ -176,6 +175,12 @@ nav h2 {
   line-height: 0.2rem;
 }
 
+@media (max-width: 599px) {
+  .navleft-menu {
+    display: none;
+  }
+}
+
 .navleft-menu h2 {
   font-size: 20px;
   text-align: center;
@@ -193,35 +198,48 @@ nav h2 {
 .banner {
   display: flex;
   justify-content: center;
+  margin-top: 3rem;
+  margin-bottom: -3rem;
   z-index: -1;
-  max-width: 100%;
-  height: auto;
-}
-
-.banner img {
-  margin-top: 6rem;
 }
 
 .field {
+  padding-top: 5rem;
   display: flex;
   flex-wrap: nowrap;
 }
 
-.madewale img {
-  display: flex;
-  justify-content: center;
+.countdown {
+  font-size: 30px;
   text-align: center;
-  vertical-align: middle;
+  color: purple;
+  margin-bottom: -2rem;
+  background-color: grey;
+  border: 10px solid black;
+  opacity: 80%;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  border-radius: 25px;
+}
+
+.madewale {
   margin-top: 3.5rem;
+  display: fixed;
+  justify-content: center;
+}
+
+.madewale img {
+  display: fixed;
+  justify-content: center;
+  margin-top: 3.5rem;
+  margin-left: 1rem;
 }
 
 .babysteps img {
-  display: flex;
-  margin-top: 8rem;
+  margin-left: 0.5rem;
+  display: fixed;
+  margin-top: 3.5rem;
   justify-content: center;
-  align-items: center;
-  align-content: center;
-  text-align: center;
 }
 
 .view-content {
@@ -237,20 +255,22 @@ nav h2 {
 }
 
 .tour-info {
+  border-radius: 25px;
   display: fixed;
   width: 70%;
   height: auto;
   border: 5px solid black;
-  background-color: lightgrey;
+  background-color: rgb(92, 88, 88);
 }
 
 .tour-title h4 {
   font-size: 50px;
-  color: lime;
+  color: gold;
   margin: -3rem 0rem 0 -4rem;
 }
 
 .tour-info p {
+  color: white;
   margin-top: 2rem;
   font-size: 25px;
 }
@@ -314,7 +334,7 @@ nav h2 {
 }
 
 .social-media .spacer {
-  padding: 0.5rem;
+  padding: 2rem;
   display: flex;
   justify-content: center;
 }
